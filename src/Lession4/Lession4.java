@@ -37,7 +37,7 @@ public class Lession4 {
         //найти создание-максимальное количество элементов и вывод
         int max = array[0];
         int min = array[0];
-           for (int i = 1; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++) {
             if (array[i] < min) {
                 min = array[i];
             }
@@ -48,8 +48,8 @@ public class Lession4 {
         System.out.println("Минимальное значение: " + min);
         System.out.println("Максимальное значение: " + max);
         //Найти индексы минимального и максимального элементов
-        int minIndex = array[0];
-        int maxIndex = array[0];
+        int minIndex = (0);
+        int maxIndex = (0);
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] < array[minIndex]) {
@@ -62,9 +62,9 @@ public class Lession4 {
 
         System.out.println("Индекс минимального элемента: " + minIndex);
         System.out.println("Индекс максимального элемента: " + maxIndex);
-       //Найти и вывести количество нулевых элементов
-        int zeroCount=0;
-        for(int number : array) {
+        //Найти и вывести количество нулевых элементов
+        int zeroCount = 0;
+        for (int number : array) {
             if (number == 0) {
                 zeroCount++;
             }
@@ -73,9 +73,34 @@ public class Lession4 {
             System.out.println("Количество нулевых элементов: " + zeroCount);
         } else {
             System.out.println("Нулевых элементов в массиве нет.");
+        }
+        // Пройти по массиву и поменять местами элементы первый и последний, второй и
+        // предпоследний и т.д
+        int legth = array.length;
+        for (int i = 0; i < array.length / 2; i++) {
+
+            int temp = array[i];
+            array[i] = array[legth - 1 - i];
+            array[legth - 1 - i] = temp;
+        }
+        for (int i = 0; i < legth; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+
+
+        for (int i = 0; i < array.length; i++) {
+            if (i > 0) {
+                if (array[i - 1] >= array[i]) {
+                    System.out.println("Последовательность не возрастающая");
+                    break;
+                }
             }
+            if (i == array.length - 1)
+                System.out.println("Последовательность возрастающая");
         }
     }
+}
 
 
 
