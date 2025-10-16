@@ -2,7 +2,7 @@
 <project version="4">
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="TabulinTMSq80" options="--add-exports jdk.javadoc/jdk.javadoc.internal.doclets.formats.html.markup=ALL-UNNAMED" />
+      <module name="TabulinTMSq80" options="--add-exports jdk.javadoc/jdk.javadoc.internal.doclets.formats.html.markup=ALL-UNNAMED --add-exports java.xml/com.sun.org.apache.bcel.internal.classfile=ALL-UNNAMED" />
     </option>
   </component>
 </project>

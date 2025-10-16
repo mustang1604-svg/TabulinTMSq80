@@ -18,7 +18,7 @@ public class Lession4 {
         System.out.println("Массив, заполненный случайными числами:");
 
         for (int i = 0; i < size; i++) {
-            // Генерируем случайное число, например, от 0 до 10
+            // Генерируем случайное число
             array[i] = random.nextInt(10);
             System.out.print(array[i] + " ");
         }
@@ -99,7 +99,13 @@ public class Lession4 {
             if (i == array.length - 1)
                 System.out.println("Последовательность возрастающая");
         }
+        star();
     }
+
+    public static void star(){
+
+    }
+
 }
 
 
