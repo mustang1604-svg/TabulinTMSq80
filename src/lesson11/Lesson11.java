@@ -18,7 +18,7 @@ public class Lesson11 {
         String shortest = strings1[0];
         String longest = strings1[0];
         for (String str : strings1) {
-            if (str.length() < shortest.length()) {
+            if (str.length() <= shortest.length()) {
                 shortest = str;
             }
             if (str.length() > longest.length()) {
@@ -100,7 +100,7 @@ public class Lesson11 {
         scanner.close();
     }
 
-    // Метод для проверки, все ли символы в слове уникальны
+    //все ли символы в слове уникальны
     private static boolean isAllUniqueChars(String word) {
         Set<Character> charSet = new HashSet<>();
         for (char c : word.toCharArray()) {
