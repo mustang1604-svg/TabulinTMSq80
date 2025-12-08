@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ArrayList2 {
-    public static void main(String[] args) {
+    public static void main() {
         long result = new ArrayList<>(List.of(1, 2, 3, 2, 4, 5, 4, 6, 7, 8))
                 .stream()
                 .distinct()
